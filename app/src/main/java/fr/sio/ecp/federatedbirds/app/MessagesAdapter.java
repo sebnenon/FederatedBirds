@@ -27,7 +27,8 @@ public class MessagesAdapter extends RecyclerView.Adapter<MessagesAdapter.Messag
 
     // here are two constructors allowing the use of a special boolean parameter to hide the avatar in a message.
     // this is a temporary hack that could strongly be improved
-    public MessagesAdapter() {}
+    public MessagesAdapter() {
+    }
 
     public MessagesAdapter(boolean showAvatar) {
         this.showAvatar = showAvatar;
@@ -56,7 +57,7 @@ public class MessagesAdapter extends RecyclerView.Adapter<MessagesAdapter.Messag
 
         holder.mTextView.setText(message.text);
         // Improved version of the avatar removal
-        if(showAvatar){
+        if (showAvatar) {
             Picasso.with(holder.mUserAvatarView.getContext())
                     .load(message.user.avatar)
                     .into(holder.mUserAvatarView);
@@ -70,7 +71,7 @@ public class MessagesAdapter extends RecyclerView.Adapter<MessagesAdapter.Messag
                     v.getContext().startActivity(intent);
                 }
             });
-        }else{
+        } else {
             holder.mUserAvatarView.setVisibility(View.GONE);
         }
     }

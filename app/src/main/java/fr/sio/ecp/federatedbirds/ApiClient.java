@@ -81,7 +81,8 @@ public class ApiClient {
     }
 
     public List<Message> getMessages(Long userId) throws IOException {
-        TypeToken<List<Message>> type = new TypeToken<List<Message>>() {};
+        TypeToken<List<Message>> type = new TypeToken<List<Message>>() {
+        };
         String path = userId == null ? "messages" : "messages?author=" + userId;
         return get(path, type.getType());
     }
@@ -92,15 +93,18 @@ public class ApiClient {
 
     public List<User> getUserFollowed(Long userId) throws IOException {
         String id = userId != null ? Long.toString(userId) : "me";
-        TypeToken<List<User>> type = new TypeToken<List<User>>() {};
+        TypeToken<List<User>> type = new TypeToken<List<User>>() {
+        };
         //return get("users", type.getType());
         return get("users/" + id + "/followed", type.getType());
     }
 
-    // Added by SNenon
+    // Added by SNenon:
+    // Inspired from the previous one, permits to get the followers the same way
     public List<User> getUserFollowers(Long userId) throws IOException {
         String id = userId != null ? Long.toString(userId) : "me";
-        TypeToken<List<User>> type = new TypeToken<List<User>>() {};
+        TypeToken<List<User>> type = new TypeToken<List<User>>() {
+        };
         //return get("users", type.getType());
         return get("users/" + id + "/followers", type.getType());
     }
@@ -113,6 +117,7 @@ public class ApiClient {
     }
 
     // Added by SNenon
+    // This creates a new account
     public String register(String login, String password, String email) throws IOException {
         JsonObject body = new JsonObject();
         body.addProperty("login", login);
@@ -127,15 +132,18 @@ public class ApiClient {
         return post("messages", message, Message.class);
     }
 
+    // Added by SNenon
+    // This permits to follow/unfollow a user
     public User setFollowRelationship(Long followId, boolean bFollow) throws IOException {
         if (bFollow) {
             return post("users/" + Long.toString(followId) + "?followed=true", null, User.class);
-        }
-        else {
+        } else {
             return post("users/" + Long.toString(followId) + "?followed=false", null, User.class);
         }
     }
 
+    // Added by SNenon
+    // This upload the avatar
     public User uploadAvatar(Bitmap bitmap) throws IOException {
         // we start from the hypothesis that the picture is sent in Json using the following format:
         // {"picture":Base64 encoded picture}

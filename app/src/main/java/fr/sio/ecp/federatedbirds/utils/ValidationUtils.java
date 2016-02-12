@@ -16,7 +16,8 @@ public class ValidationUtils {
         return password != null && password.matches(PASSWORD_PATTERN);
     }
 
-    // TODO comment
+    // Added by SNenon
+    // This permits to validate an email for registering a new user
     public static boolean validateEmail(String email) {
         return email != null && android.util.Patterns.EMAIL_ADDRESS.matcher(email).matches();
     }

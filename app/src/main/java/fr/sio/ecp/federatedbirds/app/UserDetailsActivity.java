@@ -67,36 +67,36 @@ public class UserDetailsActivity extends AppCompatActivity implements LoaderMana
                                               }
             );
         }
-        }
+    }
 
 
-        @Override
-        protected void onStart () {
-            super.onStart();
-            getSupportLoaderManager().initLoader(
-                    LOADER_MESSAGES,
-                    getIntent().getExtras(),
-                    this
-            );
-        }
+    @Override
+    protected void onStart() {
+        super.onStart();
+        getSupportLoaderManager().initLoader(
+                LOADER_MESSAGES,
+                getIntent().getExtras(),
+                this
+        );
+    }
 
-        @Override
-        public Loader<List<Message>> onCreateLoader ( int id, Bundle args){
-            User usr = new Gson().fromJson(getIntent().getExtras().getString("user"), User.class);
-            return new MessagesLoader(getApplicationContext(), usr.id);
-        }
+    @Override
+    public Loader<List<Message>> onCreateLoader(int id, Bundle args) {
+        User usr = new Gson().fromJson(getIntent().getExtras().getString("user"), User.class);
+        return new MessagesLoader(getApplicationContext(), usr.id);
+    }
 
-        @Override
-        public void onLoadFinished (Loader < List < Message >> loader, List < Message > messages){
-            mMessagesAdapter.setMessages(messages);
-        }
+    @Override
+    public void onLoadFinished(Loader<List<Message>> loader, List<Message> messages) {
+        mMessagesAdapter.setMessages(messages);
+    }
 
-        @Override
-        public void onLoaderReset (Loader < List < Message >> loader) {
-
-        }
+    @Override
+    public void onLoaderReset(Loader<List<Message>> loader) {
 
     }
+
+}
 
 
 

@@ -57,7 +57,7 @@ public class LoginTaskFragment extends DialogFragment {
             try {
                 String login = getArguments().getString("login");
                 String password = getArguments().getString("password");
-                TokenManager.registerUser(getContext(),login);
+                TokenManager.registerUser(getContext(), login);
                 return ApiClient.getInstance(getContext()).login(login, password);
             } catch (IOException e) {
                 Log.e(LoginActivity.class.getSimpleName(), "Login failed", e);

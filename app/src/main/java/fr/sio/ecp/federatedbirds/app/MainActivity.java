@@ -17,13 +17,13 @@ import fr.sio.ecp.federatedbirds.auth.TokenManager;
 
 public class MainActivity extends AppCompatActivity {
 
+    private ActionBarDrawerToggle mDrawerToggle;
+
     public static Intent newIntent(Context context) {
         Intent intent = new Intent(context, MainActivity.class);
         intent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
         return intent;
     }
-
-    private ActionBarDrawerToggle mDrawerToggle;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

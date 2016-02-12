@@ -66,6 +66,7 @@ public abstract class UsersFragment extends Fragment implements LoaderManager.Lo
     }
 
     @Override
-    public void onLoaderReset(Loader<List<User>> loader) { }
+    public void onLoaderReset(Loader<List<User>> loader) {
+    }
 
 }

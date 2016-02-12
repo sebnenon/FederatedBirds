@@ -52,14 +52,11 @@ public class UsersAdapter extends RecyclerView.Adapter<UsersAdapter.MessageViewH
         final User user = mUsers.get(position);
 
 
-
-
         Picasso.with(holder.mAvatarView.getContext())
                 .load(user.avatar)
                 .into(holder.mAvatarView);
 
         holder.mUsernameView.setText(user.login);
-
 
 
         holder.mFollowB.setOnClickListener(new View.OnClickListener() {
@@ -85,7 +82,7 @@ public class UsersAdapter extends RecyclerView.Adapter<UsersAdapter.MessageViewH
         holder.mAvatarView.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(v.getContext(),UserDetailsActivity.class);
+                Intent intent = new Intent(v.getContext(), UserDetailsActivity.class);
                 intent.putExtra("user", new Gson().toJson(user));
                 v.getContext().startActivity(intent);
             }
@@ -110,14 +107,13 @@ public class UsersAdapter extends RecyclerView.Adapter<UsersAdapter.MessageViewH
     }
 
 
-
     private class FollowTask extends AsyncTask<Void, Void, User> {
 
         private Context mContext;
         private long mFollowingId;
         private boolean mFollow;
 
-        public FollowTask(Context context, long following_id, boolean follow){
+        public FollowTask(Context context, long following_id, boolean follow) {
             mContext = context;
             mFollowingId = following_id;
             mFollow = follow;
@@ -126,7 +122,7 @@ public class UsersAdapter extends RecyclerView.Adapter<UsersAdapter.MessageViewH
         @Override
         protected User doInBackground(Void... params) {
             try {
-                return  ApiClient.getInstance(mContext).setFollowRelationship(mFollowingId, mFollow);
+                return ApiClient.getInstance(mContext).setFollowRelationship(mFollowingId, mFollow);
             } catch (IOException e) {
                 Log.e(UsersAdapter.class.getSimpleName(), "Failed", e);
                 return null;

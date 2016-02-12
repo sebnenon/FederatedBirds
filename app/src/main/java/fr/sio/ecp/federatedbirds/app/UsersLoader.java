@@ -7,8 +7,6 @@ import android.util.Log;
 import java.io.IOException;
 import java.util.List;
 
-import fr.sio.ecp.federatedbirds.ApiClient;
-import fr.sio.ecp.federatedbirds.model.Message;
 import fr.sio.ecp.federatedbirds.model.User;
 
 /**
