@@ -23,8 +23,10 @@ import fr.sio.ecp.federatedbirds.model.User;
 
 /**
  * Created by snenon on 22/01/16.
+ * This activity presents the user's details.
+ * The header is the avatar, name and email
+ * The rest of the page is a "recycled" recyclerview to show the last messages of the user
  */
-// TODO comment
 
 public class UserDetailsActivity extends AppCompatActivity implements LoaderManager.LoaderCallbacks<List<Message>> {
 

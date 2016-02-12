@@ -20,8 +20,8 @@ import fr.sio.ecp.federatedbirds.model.User;
 
 /**
  * Created by snenon on 10/01/16.
+ * Here is gathered all the common code between the different Users**Fragment
  */
-// TODO comment
 
 public abstract class UsersFragment extends Fragment implements LoaderManager.LoaderCallbacks<List<User>> {
 

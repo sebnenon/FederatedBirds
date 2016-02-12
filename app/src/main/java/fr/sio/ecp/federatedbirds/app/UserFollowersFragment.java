@@ -9,7 +9,7 @@ import java.util.List;
 import fr.sio.ecp.federatedbirds.model.User;
 
 // Created by SNenon
-// TODO comment
+// This class is just an extension of UsersFragment, adapted for the followers
 
 public class UserFollowersFragment extends UsersFragment implements LoaderManager.LoaderCallbacks<List<User>> {
 

@@ -8,7 +8,7 @@ import java.util.List;
 
 import fr.sio.ecp.federatedbirds.model.User;
 
-// TODO comment
+// This class is just an extension of UsersFragment, adapted for the followed
 
 
 public class UserFollowedFragment extends UsersFragment implements LoaderManager.LoaderCallbacks<List<User>> {

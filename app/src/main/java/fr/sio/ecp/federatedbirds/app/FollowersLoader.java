@@ -9,7 +9,7 @@ import fr.sio.ecp.federatedbirds.ApiClient;
 import fr.sio.ecp.federatedbirds.model.User;
 
 // Created by SNenon
-// TODO comment
+// Inspired from FollowedLoader (i.e. the same)
 public class FollowersLoader extends UsersLoader {
 
     public FollowersLoader(Context context, Long userId) {

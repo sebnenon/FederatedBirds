@@ -10,6 +10,7 @@ import fr.sio.ecp.federatedbirds.model.User;
 
 /**
  * Created by Michaël on 30/11/2015.
+ * No changes here
  */
 public class FollowedLoader extends UsersLoader {
 

@@ -17,7 +17,8 @@ import fr.sio.ecp.federatedbirds.ApiClient;
 import fr.sio.ecp.federatedbirds.R;
 import fr.sio.ecp.federatedbirds.auth.TokenManager;
 
-// TODO comment
+// This is the asynchronous task fragment. It permits to asynchroneously register the user
+// and get a confirmation. After registration, the user is logged in and starts using the app
 
 public class RegisterTaskFragment extends DialogFragment {
 

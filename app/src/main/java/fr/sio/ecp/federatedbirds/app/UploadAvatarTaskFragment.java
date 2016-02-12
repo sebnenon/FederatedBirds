@@ -19,9 +19,9 @@ import fr.sio.ecp.federatedbirds.R;
 
 /**
  * Created by snenon on 23/01/16.
- * This is inspired from logintaskfragment, and permits to treat the upload in parallel
+ * This is inspired from logintaskfragment (almost the same), and permits to treat the upload of the
+ * picture asynchroneously
  */
-// TODO comment
 
 public class UploadAvatarTaskFragment extends DialogFragment {
     private Bitmap mBitmap;

@@ -16,6 +16,10 @@ import android.widget.ImageView;
 
 import fr.sio.ecp.federatedbirds.R;
 
+/**
+ * Created by SNenon
+ * new class
+ */
 public class UploadAvatarActivity extends AppCompatActivity {
 
     // number of images to select

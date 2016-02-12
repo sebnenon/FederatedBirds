@@ -8,7 +8,7 @@ import android.widget.EditText;
 import fr.sio.ecp.federatedbirds.R;
 import fr.sio.ecp.federatedbirds.utils.ValidationUtils;
 
-// TODO comment
+// Activity for account creation, inspired from login activity, it works the same way
 
 
 public class RegisterActivity extends AppCompatActivity {
@@ -28,7 +28,7 @@ public class RegisterActivity extends AppCompatActivity {
     }
 
     private void login() {
-
+        // The login function verifies and registers the user's data
         // Get form views
         EditText usernameText = (EditText) findViewById(R.id.username);
         EditText passwordText = (EditText) findViewById(R.id.password);
