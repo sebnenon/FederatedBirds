@@ -29,13 +29,18 @@ public class TokenManager {
         Log.i(TokenManager.class.getSimpleName(), "Auth preferences cleared");
     }
 
+    // Added by SNenon
+    // this function permits to add the current user login to the sharedpreferences to make
+    // getauthenticateduser work
     public static void registerUser(Context context, String login) {
-        // this function permits to add the current user login to the sharedpreferences to make getauthenticateduser work
+
         SharedPreferences sp = context.getSharedPreferences(AUTH_PREFERENCES, Context.MODE_PRIVATE);
         sp.edit().putString("login", login).apply();
         return;
     }
 
+    // Added by SNenon
+    // This function permits to get the connected user's login from shared preferences
     public static String getAuthenticatedUser(Context context) {
         SharedPreferences sp = context.getSharedPreferences(AUTH_PREFERENCES, Context.MODE_PRIVATE);
         return sp.getString("login", null);
