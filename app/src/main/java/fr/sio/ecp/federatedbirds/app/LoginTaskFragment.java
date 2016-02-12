@@ -19,6 +19,7 @@ import fr.sio.ecp.federatedbirds.auth.TokenManager;
 
 /**
  * Created by Michaël on 30/11/2015.
+ * no changes here
  */
 public class LoginTaskFragment extends DialogFragment {
 

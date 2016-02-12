@@ -9,6 +9,7 @@ import fr.sio.ecp.federatedbirds.auth.TokenManager;
 
 /**
  * Created by Michaël on 26/11/2015.
+ * No changes here
  */
 public class SettingsFragment extends PreferenceFragmentCompat {
 

@@ -15,6 +15,7 @@ import android.view.MenuItem;
 import fr.sio.ecp.federatedbirds.R;
 import fr.sio.ecp.federatedbirds.auth.TokenManager;
 
+// added followers to menu
 public class MainActivity extends AppCompatActivity {
 
     private ActionBarDrawerToggle mDrawerToggle;
@@ -52,6 +53,7 @@ public class MainActivity extends AppCompatActivity {
                                 .commit();
                         return true;
                     case R.id.followers:
+                        // new case
                         fragment = new UserFollowersFragment();
                         getSupportFragmentManager().beginTransaction()
                                 .replace(R.id.main_container, fragment)

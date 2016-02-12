@@ -19,6 +19,7 @@ import fr.sio.ecp.federatedbirds.model.User;
 
 /**
  * Created by Michaël on 24/11/2015.
+ * Just added a listener on the avatar, active only for the connected user
  */
 public class MessagesAdapter extends RecyclerView.Adapter<MessagesAdapter.MessageViewHolder> {
 

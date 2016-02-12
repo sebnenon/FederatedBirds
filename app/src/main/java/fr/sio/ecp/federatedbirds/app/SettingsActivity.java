@@ -7,6 +7,7 @@ import fr.sio.ecp.federatedbirds.R;
 
 /**
  * Created by Michaël on 26/11/2015.
+ * no changes
  */
 public class SettingsActivity extends AppCompatActivity {
 

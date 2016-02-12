@@ -9,6 +9,8 @@ import android.widget.EditText;
 import fr.sio.ecp.federatedbirds.R;
 import fr.sio.ecp.federatedbirds.utils.ValidationUtils;
 
+
+// No changes here
 public class LoginActivity extends AppCompatActivity {
 
     @Override

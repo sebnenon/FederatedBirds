@@ -11,6 +11,7 @@ import fr.sio.ecp.federatedbirds.model.User;
 
 /**
  * Created by Michaël on 24/11/2015.
+ * no changes here
  */
 public abstract class UsersLoader extends AsyncTaskLoader<List<User>> {
 

@@ -12,6 +12,7 @@ import fr.sio.ecp.federatedbirds.model.Message;
 
 /**
  * Created by Michaël on 24/11/2015.
+ * no changes
  */
 public class MessagesLoader extends AsyncTaskLoader<List<Message>> {
 

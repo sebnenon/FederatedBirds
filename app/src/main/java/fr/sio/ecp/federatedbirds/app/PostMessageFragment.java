@@ -26,6 +26,7 @@ import fr.sio.ecp.federatedbirds.model.Message;
 
 /**
  * Created by admin on 02/12/15.
+ * SNenon: little bugs corrected
  */
 public class PostMessageFragment extends DialogFragment {
 

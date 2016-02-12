@@ -26,6 +26,9 @@ import fr.sio.ecp.federatedbirds.model.User;
 
 /**
  * Created by Michaël on 24/11/2015.
+ *
+ * I just added the async. task and buttons for (un)follow and a listener on the avatar to launch
+ * the user details activity
  */
 public class UsersAdapter extends RecyclerView.Adapter<UsersAdapter.MessageViewHolder> {
 
@@ -59,6 +62,7 @@ public class UsersAdapter extends RecyclerView.Adapter<UsersAdapter.MessageViewH
         holder.mUsernameView.setText(user.login);
 
 
+        // added listener on (un)follow buttons
         holder.mFollowB.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -79,6 +83,7 @@ public class UsersAdapter extends RecyclerView.Adapter<UsersAdapter.MessageViewH
             }
         });
 
+        // listener to start UserDetailsActivity
         holder.mAvatarView.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -107,6 +112,7 @@ public class UsersAdapter extends RecyclerView.Adapter<UsersAdapter.MessageViewH
     }
 
 
+    // This part treats the action of (un)following asynchroneously
     private class FollowTask extends AsyncTask<Void, Void, User> {
 
         private Context mContext;
