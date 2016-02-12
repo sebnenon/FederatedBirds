@@ -4,6 +4,7 @@ import java.util.Date;
 
 /**
  * Created by Michaël on 24/11/2015.
+ * No changes here
  */
 public class Message {
 
