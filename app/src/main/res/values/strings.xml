@@ -1,0 +1,35 @@
+<resources>
+    <string name="app_name">FederatedBirds</string>
+    <string name="hello">Hello world</string>
+    <string name="login">Connexion</string>
+    <string name="password">Mot de passe</string>
+    <string name="username">Login</string>
+    <string name="invalid_format">Format incorrect</string>
+    <string name="login_failed">La connexion a échoué</string>
+    <string name="home">Accueil</string>
+    <string name="settings">Réglages</string>
+    <string name="open_menu">Ouvrir le menu</string>
+    <string name="close_menu">Fermer le menu</string>
+    <string name="logout">Déconnexion</string>
+    <string name="login_progress">Connexion en cours...</string>
+    <string name="followed">Abonnements</string>
+    <string name="new_message">Nouveau message</string>
+    <string name="post">Poster</string>
+    <string name="empty_message_error">Message vide non posté.</string>
+    <string name="progress">En cours...</string>
+    <string name="post_failed">Le post a échoué.</string>
+    <string name="followers">Abonnés</string>
+    <string name="createaccount">Créer un compte</string>
+    <string name="verifpassword">Verification</string>
+    <string name="email">E-mail</string>
+    <string name="not_equiv_password">Invalide</string>
+    <string name="register_progress">Enregistrement en cours...</string>
+    <string name="register_failed">Enregistrement échoué</string>
+    <string name="follow">Abonné!</string>
+    <string name="unfollow">Désabonné!</string>
+    <string name="selectPicture">Sélectionner une image</string>
+    <string name="uploadPicture">Envoyer</string>
+    <string name="cancelUpload">Annuler</string>
+    <string name="upload_progress">Envoi en cours...</string>
+    <string name="upload_failed">Echec de l\'envoi</string>
+</resources>
